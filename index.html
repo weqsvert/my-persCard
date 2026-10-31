@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe6f1">
+
+<title>✦ Макарова Ульяна</title>
+<meta name="description" content="Ульяна Макарова: студентка 2 курса, системное программирование. Веб, дизайн, игры. Спроси меня в терминале.">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Manrope:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">✦ студентка 2 курса · системное программирование</p>
+      <h1 aria-label="Имя Фамилия">
+        <span class="line" data-split>Ульяна</span>
+        <span class="line" data-split>Макарова</span>
+      </h1>
+      <p class="lead">Творческий разработчик в процессе. Нравится веб, дизайн и игры.</p>
+      <a class="cta" href="#terminal">Спроси меня в терминале ↓</a>
+    </div>
+    <div class="stack" id="stack"></div>
+  </section>
+
+  <section class="term-wrap" id="terminal">
+    <div class="term" id="term">
+      <div class="term-bar"><i></i><i></i><i></i><span>visitka — zsh</span></div>
+      <div class="term-body" id="out" aria-live="polite"></div>
+      <form class="term-input" id="form">
+        <span class="ps" id="ps1"></span>
+        <input id="cmd" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Введите команду, например help">
+      </form>
+    </div>
+    <div class="chips" id="chips"></div>
+    <p class="hint">Нажми <kbd>/</kbd>, чтобы ввести команду, <kbd>Tab</kbd> дополняет, <kbd>↑</kbd> вспоминает прошлую.</p>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Ульяна Макарова</span>
+</footer>
+
+<script src="card.js"></script>
+</body>
+</html>
